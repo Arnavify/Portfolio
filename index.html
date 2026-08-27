@@ -1,46 +1,179 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Arnav Kala is a UI/UX designer, video editor, and graphic designer." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arnav Kala is a UI/UX designer, video editor, and graphic designer.">
+  <meta property="og:title" content="Arnav Kala | UI/UX, Video Editor & Graphic Designer">
+  <meta property="og:description" content="Portfolio of Arnav Kala, a UI/UX designer, video editor, and graphic designer.">
+  <meta name="theme-color" content="#ffffff">
   <title>Arnav Kala | UI/UX, Video Editor & Graphic Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#fff;--text:#111;--muted:#6b6b6b;--line:#e8e8e8;--card:#f6f6f4;--accent:#111;--radius:18px;--max:1120px}
+    :root{--bg:#fff;--text:#111;--muted:#6b6b6b;--line:#e8e8e8;--card:#f6f6f4;--max:1120px}
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;font-weight:500}
-    a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);z-index:10}
-    .brand{font-weight:700;letter-spacing:-.03em}.navlinks{display:flex;gap:26px;font-size:14px;color:#555}.navlinks a:hover{color:#111}.theme{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 11px;cursor:pointer;font-size:13px}
-    main{overflow:hidden}.hero{padding:105px 0 100px}.eyebrow{font-size:14px;color:var(--muted);margin-bottom:20px;font-weight:500}.hero h1{font-size:clamp(52px,8vw,100px);line-height:.96;letter-spacing:-.075em;max-width:950px;font-weight:800}.hero h1 span{color:#888}.hero-copy{margin-top:28px;max-width:620px;font-size:20px;color:#555;font-weight:500}.actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #111;padding:12px 18px;border-radius:999px;font-size:14px;font-weight:600}.btn.primary{background:#111;color:#fff}.btn.secondary{border-color:var(--line);color:#444}
-    section{padding:82px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:38px;align-items:end}.section-head h2{font-size:32px;letter-spacing:-.045em;font-weight:700}.section-head p{color:var(--muted);max-width:470px;font-size:15px;font-weight:500}
-    .experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}.exp-card{border:1px solid var(--line);border-radius:var(--radius);padding:25px}.exp-top{display:flex;justify-content:space-between;gap:15px}.exp-card h3{font-size:18px;font-weight:600}.date{font-size:13px;color:var(--muted);white-space:nowrap;font-weight:500}.exp-card p{margin-top:12px;color:#666;font-size:15px;font-weight:500}.tag{display:inline-block;margin-top:20px;background:var(--card);padding:6px 9px;border-radius:999px;font-size:12px;color:#555;font-weight:500}
-    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.work{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fafafa;transition:transform .2s,box-shadow .2s}.work:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(0,0,0,.07)}.work-visual{height:300px;background:#e9e9e6;display:flex;align-items:center;justify-content:center;font-size:14px;color:#888;font-weight:600}.work-info{padding:22px}.work-info h3{font-size:21px;letter-spacing:-.025em;font-weight:600}.work-info p{margin-top:7px;color:#666;font-size:14px;font-weight:500}.work-info small{display:block;margin-top:16px;color:#999;font-weight:500}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.stat{padding:35px 25px}.stat+.stat{border-left:1px solid var(--line)}.stat strong{font-size:44px;letter-spacing:-.06em;font-weight:700}.stat span{display:block;color:var(--muted);font-size:14px;margin-top:4px;font-weight:500}
-    .link-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.link-row{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}.link-row div{min-width:0}.link-row h3{font-size:17px;font-weight:600}.link-row p{color:var(--muted);font-size:14px;margin-top:3px;font-weight:500}.arrow{color:#999}
-    .cta{padding:100px 0;text-align:center}.cta h2{font-size:clamp(42px,7vw,76px);letter-spacing:-.065em;line-height:1;font-weight:800}.cta p{color:var(--muted);max-width:500px;margin:22px auto 30px;font-weight:500}
-    footer{border-top:1px solid var(--line);padding:25px 0 35px;display:flex;justify-content:space-between;gap:20px;color:#777;font-size:13px;font-weight:500}.socials{display:flex;gap:18px}.socials a:hover{color:#111}
-    @media(max-width:720px){.wrap{width:min(var(--max),calc(100% - 28px))}.navlinks{display:none}.hero{padding:75px 0 70px}.hero h1{font-size:56px}.hero-copy{font-size:18px}.experience,.work-grid,.link-list{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat+.stat{border-left:0;border-top:1px solid var(--line)}section{padding:60px 0}.section-head{display:block}.section-head p{margin-top:10px}.work-visual{height:220px}footer{display:block}.socials{margin-top:12px}}
-    body.dark{--bg:#111;--text:#f5f5f5;--muted:#999;--line:#292929;--card:#1b1b1b;--accent:#fff}body.dark nav{background:rgba(17,17,17,.9)}body.dark .btn.primary{background:#fff;color:#111}body.dark .btn.secondary{border-color:#333;color:#ddd}body.dark .work{background:#161616}body.dark .work-visual{background:#202020}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{height:76px;display:flex;align-items:center;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);z-index:10}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+    .brand{font-weight:700;letter-spacing:-.03em}
+    .navlinks{display:flex;gap:26px;font-size:14px;color:#555}
+    .navlinks a:hover{color:#111}
+    .theme{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 11px;cursor:pointer;font-size:13px;color:var(--text)}
+    main{overflow:hidden}
+    section{padding:82px 0;border-top:1px solid var(--line);scroll-margin-top:76px}
+    .hero{padding:105px 0 100px;border-top:0}
+    .eyebrow{font-size:14px;color:var(--muted);margin-bottom:20px;font-weight:500}
+    .hero h1{font-size:clamp(52px,8vw,100px);line-height:.96;letter-spacing:-.075em;max-width:950px;font-weight:800}
+    .hero h1 span{color:#777}
+    .hero-copy{margin-top:28px;max-width:620px;font-size:20px;color:#555;font-weight:500}
+    .actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #111;padding:12px 18px;border-radius:999px;font-size:14px;font-weight:600}
+    .btn.primary{background:#111;color:#fff}
+    .btn.secondary{border-color:var(--line);color:#444}
+    .section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:38px;align-items:end}
+    .section-head h2{font-size:32px;letter-spacing:-.045em;font-weight:700}
+    .section-head p{color:var(--muted);max-width:470px;font-size:15px;font-weight:500}
+    .experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .exp-card{border:1px solid var(--line);border-radius:var(--radius,18px);padding:25px}
+    .exp-top{display:flex;justify-content:space-between;gap:15px}
+    .exp-card h3{font-size:18px;font-weight:600}
+    .date{font-size:13px;color:var(--muted);white-space:nowrap;font-weight:500}
+    .exp-card p{margin-top:12px;color:#666;font-size:15px;font-weight:500}
+    .tag{display:inline-block;margin-top:20px;background:var(--card);padding:6px 9px;border-radius:999px;font-size:12px;color:#555;font-weight:500}
+    .contact{padding:100px 0;text-align:center}
+    .contact h2{font-size:clamp(42px,7vw,76px);letter-spacing:-.065em;line-height:1;font-weight:800}
+    .contact p{color:var(--muted);max-width:500px;margin:22px auto 30px;font-weight:500}
+    footer{border-top:1px solid var(--line);padding:25px 0 35px;color:#777;font-size:13px;font-weight:500}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px}
+    .socials{display:flex;gap:18px}
+    .socials a:hover{color:#111}
+    body.dark{--bg:#111;--text:#f5f5f5;--muted:#aaa;--line:#292929;--card:#1b1b1b}
+    body.dark header{background:rgba(17,17,17,.92)}
+    body.dark .hero h1 span{color:#aaa}
+    body.dark .hero-copy{color:#ccc}
+    body.dark .exp-card p{color:#bbb}
+    body.dark .btn.primary{background:#fff;color:#111;border-color:#fff}
+    body.dark .btn.secondary{border-color:#333;color:#ddd}
+    body.dark .theme{color:#f5f5f5}
+    @media(max-width:720px){
+      .wrap{width:min(var(--max),calc(100% - 28px))}
+      .navlinks{display:none}
+      .hero{padding:75px 0 70px}
+      .hero h1{font-size:56px}
+      .hero-copy{font-size:18px}
+      .experience{grid-template-columns:1fr}
+      section{padding:60px 0}
+      .section-head{display:block}
+      .section-head p{margin-top:10px}
+      .contact{padding:75px 0}
+      footer .wrap{display:block}
+      .socials{margin-top:12px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-  <nav><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%"><a class="brand" href="#top">Arnav Kala</a><div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#videos">Videos</a><a href="#contact">Contact</a></div><button class="theme" id="theme" aria-label="Toggle dark mode">Dark mode</button></div></nav>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Arnav Kala home">Arnav Kala</a>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme" id="theme" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
   <main id="top">
     <div class="wrap">
-      <section class="hero" style="border-top:0"><div class="eyebrow">Designer · Editor · Visual storyteller</div><h1>Hi, I'm Arnav Kala.<br><span>UI/UX, Video Editor & Graphic Designer.</span></h1><p class="hero-copy">I design digital experiences, edit visual stories, and build graphics that make ideas easier to understand and harder to ignore.</p><div class="actions"><a class="btn primary" href="#work">See my work ↓</a><a class="btn secondary" href="#contact">Work with me</a></div></section>
-      <section id="about"><div class="section-head"><h2>What I do</h2><p>I work across interaction design and visual communication, from early ideas and flows to polished interfaces, edits, and campaign graphics.</p></div><div class="experience"><article class="exp-card"><div class="exp-top"><h3>UI/UX Design</h3><span class="date">01</span></div><p>Research, interaction flows, wireframes, visual systems, prototypes, and interface design for digital products.</p><span class="tag">Product design</span></article><article class="exp-card"><div class="exp-top"><h3>Video Editing</h3><span class="date">02</span></div><p>Short-form edits, motion-led storytelling, pacing, typography, transitions, and social content.</p><span class="tag">Visual storytelling</span></article><article class="exp-card"><div class="exp-top"><h3>Graphic Design</h3><span class="date">03</span></div><p>Identity, posters, social graphics, presentation visuals, and campaign assets with a strong visual system.</p><span class="tag">Visual design</span></article><article class="exp-card"><div class="exp-top"><h3>Creative Direction</h3><span class="date">04</span></div><p>Turning a loose idea into a clear visual direction across screens, images, motion, and communication.</p><span class="tag">Concept to execution</span></article></div></section>
-      <section id="work"><div class="section-head"><h2>Selected work</h2><p>A starting portfolio structure. Replace these cards with your real case studies, prototypes, videos, and visual work.</p></div><div class="work-grid"><a class="work" href="#"><div class="work-visual">UI/UX CASE STUDY</div><div class="work-info"><h3>Product Experience</h3><p>Interaction design, research, flows and interface system.</p><small>UI/UX · Case study ↗</small></div></a><a class="work" href="#"><div class="work-visual">DIGITAL PRODUCT</div><div class="work-info"><h3>Mobile Experience</h3><p>A focused digital product designed around a clear user problem.</p><small>Product design · Case study ↗</small></div></a><a class="work" href="#"><div class="work-visual">VIDEO PROJECT</div><div class="work-info"><h3>Visual Story</h3><p>Editing, pacing, typography and motion for a short-form video.</p><small>Video · Showreel ↗</small></div></a><a class="work" href="#"><div class="work-visual">GRAPHIC SYSTEM</div><div class="work-info"><h3>Visual Identity</h3><p>A graphic direction carried across digital and social touchpoints.</p><small>Graphic design · Project ↗</small></div></a></div></section>
-      <section><div class="stats"><div class="stat"><strong>03</strong><span>Design disciplines</span></div><div class="stat"><strong>∞</strong><span>Ideas worth exploring</span></div><div class="stat"><strong>01</strong><span>Portfolio in progress</span></div></div></section>
-      <section id="videos"><div class="section-head"><h2>Recent videos</h2><p>Video work can live here without making the portfolio feel like a separate website.</p></div><div class="link-list"><a class="link-row" href="#"><div><h3>Editing project one</h3><p>Short-form edit · Motion · Sound</p></div><span class="arrow">↗</span></a><a class="link-row" href="#"><div><h3>Editing project two</h3><p>Social video · Typography · Storytelling</p></div><span class="arrow">↗</span></a><a class="link-row" href="#"><div><h3>Design process video</h3><p>UI/UX · Process · Prototype</p></div><span class="arrow">↗</span></a><a class="link-row" href="#"><div><h3>Motion experiment</h3><p>Motion graphics · Visual exploration</p></div><span class="arrow">↗</span></a></div></section>
-      <section id="contact" class="cta"><div class="eyebrow">Have a project in mind?</div><h2>Let's make something useful.</h2><p>I'm available for UI/UX, video editing, graphic design, and selected freelance projects.</p><a class="btn primary" href="mailto:biz.arnavify@gmail.com">Get in touch ↗</a></section>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow">Designer · Editor · Visual storyteller</div>
+        <h1 id="hero-title">Hi, I'm Arnav Kala.<br><span>UI/UX, Video Editor &amp; Graphic Designer.</span></h1>
+        <p class="hero-copy">I design digital experiences, edit visual stories, and create graphics that make ideas easier to understand.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about">What I do ↓</a>
+          <a class="btn secondary" href="#contact">Work with me</a>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="section-head">
+          <h2 id="about-title">What I do</h2>
+          <p>I work across interaction design and visual communication, from early ideas and flows to polished interfaces, edits, and graphic systems.</p>
+        </div>
+        <div class="experience">
+          <article class="exp-card">
+            <div class="exp-top"><h3>UI/UX Design</h3><span class="date">01</span></div>
+            <p>Research, interaction flows, wireframes, visual systems, prototypes, and interface design for digital products.</p>
+            <span class="tag">Product design</span>
+          </article>
+          <article class="exp-card">
+            <div class="exp-top"><h3>Video Editing</h3><span class="date">02</span></div>
+            <p>Short-form edits, motion-led storytelling, pacing, typography, transitions, and social content.</p>
+            <span class="tag">Visual storytelling</span>
+          </article>
+          <article class="exp-card">
+            <div class="exp-top"><h3>Graphic Design</h3><span class="date">03</span></div>
+            <p>Identity, posters, social graphics, presentation visuals, and campaign assets with a clear visual system.</p>
+            <span class="tag">Visual design</span>
+          </article>
+          <article class="exp-card">
+            <div class="exp-top"><h3>Creative Direction</h3><span class="date">04</span></div>
+            <p>Turning an idea into a clear visual direction across screens, images, motion, and communication.</p>
+            <span class="tag">Concept to execution</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="eyebrow">Have a project in mind?</div>
+        <h2 id="contact-title">Let's make something useful.</h2>
+        <p>I'm available for UI/UX, video editing, graphic design, and selected freelance projects.</p>
+        <a class="btn primary" href="mailto:biz.arnavify@gmail.com">Get in touch ↗</a>
+      </section>
     </div>
   </main>
-  <footer><div class="wrap" style="display:flex;justify-content:space-between;gap:20px;width:100%"><span>© 2026 Arnav Kala</span><div class="socials"><a href="mailto:biz.arnavify@gmail.com">Email</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></div></div></footer>
-  <script>const b=document.body,t=document.getElementById('theme');t.onclick=()=>{b.classList.toggle('dark');t.textContent=b.classList.contains('dark')?'Light mode':'Dark mode'};</script>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Arnav Kala</span>
+      <div class="socials">
+        <a href="mailto:biz.arnavify@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const theme = document.getElementById('theme');
+    const storedTheme = localStorage.getItem('theme');
+
+    if (storedTheme === 'dark') body.classList.add('dark');
+
+    function updateThemeButton() {
+      const dark = body.classList.contains('dark');
+      theme.textContent = dark ? 'Light mode' : 'Dark mode';
+      theme.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      theme.setAttribute('aria-pressed', String(dark));
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#111111' : '#ffffff');
+    }
+
+    updateThemeButton();
+
+    theme.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+      updateThemeButton();
+    });
+  </script>
 </body>
 </html>
