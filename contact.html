@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Arnav Kala</title>
+<meta name="description" content="Get in touch about projects and collaborations.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // set theme before paint to avoid flash
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+</script>
+</head>
+<body data-page="contact">
+<div class="frame-line left"></div>
+<div class="frame-line right"></div>
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Arnav Kala — home">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </a>
+  <nav class="main-nav" id="main-nav">
+    <a href="index.html" data-nav="about">About</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <a href="videos.html" data-nav="videos">Videos</a>
+    <a href="tools.html" data-nav="tools">Tools</a>
+    <a href="contact.html" data-nav="contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h1 class="page-title">Get in touch</h1>
+    <p class="lede">Project inquiries, collaborations, or just to say hello.</p>
+
+    <div class="contact-grid">
+      <form id="contact-form">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">What's this about?</label>
+          <select id="subject" name="subject">
+            <option>Project inquiry</option>
+            <option>Job opportunity</option>
+            <option>Collaboration</option>
+            <option>Just saying hi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message <span class="char-count" id="char-count">0/4000</span></label>
+          <textarea id="message" name="message" maxlength="4000" placeholder="A sentence or two is plenty."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+
+      <div>
+        <div class="direct-label">Direct</div>
+        <div class="direct-item">
+          <span class="direct-name">biz.arnavify@gmail.com</span>
+          <a class="direct-action" href="mailto:biz.arnavify@gmail.com">Email</a>
+        </div>
+        <div class="direct-item">
+          <span class="direct-name">Arnav Kala</span>
+          <a class="direct-action" href="#" data-placeholder="linkedin">LinkedIn</a>
+        </div>
+        <div class="direct-item">
+          <span class="direct-name">@arnavify</span>
+          <a class="direct-action" href="#" data-placeholder="x">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="brand" aria-hidden="true">
+    <svg viewBox="0 0 40 40" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="index.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="tools.html">Tools</a>
+    </div>
+    <div class="footer-col">
+      <h4>Social</h4>
+      <a href="#" data-placeholder="linkedin">LinkedIn</a>
+      <a href="#" data-placeholder="x">X</a>
+      <a href="#" data-placeholder="instagram">Instagram</a>
+      <a href="#" data-placeholder="dribbble">Dribbble</a>
+    </div>
+    <div class="footer-col">
+      <h4>Work</h4>
+      <a href="contact.html">Contact me</a>
+      <a href="#" data-placeholder="resume">Resumé</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.main-nav a[data-nav]').forEach(function (a) {
+    if (a.getAttribute('data-nav') === document.body.getAttribute('data-page')) {
+      a.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
