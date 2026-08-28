@@ -3,23 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arnav Kala | Interaction Designer</title>
-<style>
-@font-face{font-family:Inter;src:url('/fonts/InterVariable.woff2') format('woff2')}
-*{box-sizing:border-box}body{margin:0;background:#050505;color:#fff;font-family:Inter,Arial,sans-serif}.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column}.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:72px 72px;transform:perspective(700px) rotateX(55deg) scale(1.5);opacity:.25}.nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:24px 32px}.nav span{background:#181818;padding:14px 18px;border-radius:12px;margin-right:8px;color:#ddd;font-size:14px}.logo{background:#fff;color:#111!important}.hero-content{position:relative;z-index:2;text-align:center;margin:auto;max-width:900px;padding:0 20px}h1{font-size:clamp(48px,5.5vw,76px);line-height:1.05;letter-spacing:-3px;margin:0 auto;font-weight:500;max-width:850px}p{font-size:20px;color:#bbb;max-width:700px;margin:35px auto}.buttons a{display:inline-block;padding:14px 22px;border-radius:10px;text-decoration:none;margin:8px}.primary{background:#fff;color:#111}.secondary{border:1px solid #555;color:#fff}.logos{position:relative;z-index:2;display:flex;justify-content:center;gap:45px;padding:50px;color:#888;font-size:22px}.section{padding:60px 40px;border-top:1px solid #222}.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{border:1px solid #222;border-radius:20px;padding:30px;color:#aaa}@media(max-width:700px){.nav span{display:none}h1{letter-spacing:-2px}.cards{display:block}.card{margin-bottom:20px}}
-</style>
+<title>About | Arnav Kala</title>
+<meta name="description" content="Interaction designer building digital experiences.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // set theme before paint to avoid flash
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+</script>
 </head>
-<body>
-<section class="hero">
-<div class="grid-bg"></div>
-<div class="nav"><div><span class="logo">AK</span><span>Product</span><span>Projects</span><span>About</span><span>Contact</span></div><div><span>Resume</span></div></div>
-<div class="hero-content">
-<h1>Hi, I'm Arnav Kala.<br>Designer creating digital experiences.</h1>
-<p>I design interfaces, visual systems, and interactive products combining UX thinking with emerging technology.</p>
-<div class="buttons"><a class="primary" href="mailto:biz.arnavify@gmail.com">Work with me</a><a class="secondary" href="#projects">See recent work</a></div>
-</div>
-<div class="logos">Figma · React · Adobe · After Effects · Premiere · AI Tools</div>
-</section>
-<section class="section"><h2>Selected Projects</h2><div class="cards" id="projects"><div class="card">MAINA<br>Wearable Multimodal Communication Assistant</div><div class="card">Scan Cart<br>Self Checkout Experience</div><div class="card">Rabbit R1 Reimagined<br>AI Productivity Interface</div><div class="card">Memories<br>Spatial Memory Experience</div></div></section>
-<footer class="section">© 2026 Arnav Kala</footer>
-</body></html>
+<body data-page="about">
+<div class="frame-line left"></div>
+<div class="frame-line right"></div>
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Arnav Kala — home">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </a>
+  <nav class="main-nav" id="main-nav">
+    <a href="index.html" data-nav="about">About</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <a href="videos.html" data-nav="videos">Videos</a>
+    <a href="tools.html" data-nav="tools">Tools</a>
+    <a href="contact.html" data-nav="contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h1 class="page-title">Designing digital experiences that feel effortless</h1>
+
+    <p class="lede">I design interfaces, visual systems, and interactive products — combining UX thinking with emerging technology to make complex ideas easy to use.</p>
+    <p class="lede"><!-- Replace with your own story --> Add a second paragraph here about how you got into design, what you've worked on, and what you're focused on now.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="contact.html">Get in touch</a>
+      <a class="btn btn-secondary" href="#" data-placeholder="resume">View resumé</a>
+    </div>
+
+    <!-- Photo collage — replace each .ph placeholder with an <img> once you upload your photos -->
+    <div class="collage">
+      <div class="frame f1 tape"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f2"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f3 tape"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f4"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f5 tape"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f6"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f7 tape"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+      <div class="frame f8"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
+    </div>
+
+    <!-- Timeline — years and copy are placeholders, edit with your real milestones -->
+    <div class="timeline">
+      <div class="t-row">
+        <div class="t-year">[Year]</div>
+        <div class="t-dot-col"><div class="t-dot"></div></div>
+        <div class="t-body"><strong>Started designing.</strong> Describe how you first got into design — a tool, a project, a spark.</div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">[Year]</div>
+        <div class="t-dot-col"><div class="t-dot"></div></div>
+        <div class="t-body"><strong>Studied design.</strong> Add your education — school, program, and anything notable you built there.</div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">[Year]</div>
+        <div class="t-dot-col"><div class="t-dot"></div></div>
+        <div class="t-body"><strong>First design role.</strong> Shipped work like MAINA, Scan Cart, Rabbit R1 Reimagined, and Memories — add real context here.</div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">[Year]</div>
+        <div class="t-dot-col"><div class="t-dot"></div></div>
+        <div class="t-body"><strong>Expanded into video and motion.</strong> Add details about your YouTube thumbnail and motion design work.</div>
+      </div>
+      <div class="t-row now">
+        <div class="t-year">Now</div>
+        <div class="t-dot-col"><div class="t-dot"></div></div>
+        <div class="t-body"><strong>Designing interfaces and interactive products.</strong> Say what you're focused on today.</div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="brand" aria-hidden="true">
+    <svg viewBox="0 0 40 40" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="index.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="tools.html">Tools</a>
+    </div>
+    <div class="footer-col">
+      <h4>Social</h4>
+      <a href="#" data-placeholder="linkedin">LinkedIn</a>
+      <a href="#" data-placeholder="x">X</a>
+      <a href="#" data-placeholder="instagram">Instagram</a>
+      <a href="#" data-placeholder="dribbble">Dribbble</a>
+    </div>
+    <div class="footer-col">
+      <h4>Work</h4>
+      <a href="contact.html">Contact me</a>
+      <a href="#" data-placeholder="resume">Resumé</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.main-nav a[data-nav]').forEach(function (a) {
+    if (a.getAttribute('data-nav') === document.body.getAttribute('data-page')) {
+      a.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
