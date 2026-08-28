@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resume | Arnav Kala</title>
+<meta name="description" content="Resume of Arnav Kala, UI/UX Designer, Interaction Designer and Visual Designer.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');</script>
+<style>
+.resume-page{max-width:920px;margin:0 auto;padding:80px 28px 100px}
+.resume-head{display:flex;justify-content:space-between;gap:32px;align-items:flex-start;margin-bottom:64px}
+.resume-head h1{font-size:clamp(42px,7vw,72px);line-height:.98;margin:0 0 14px;font-weight:500;letter-spacing:-.045em}
+.resume-role{margin:0;color:var(--text-secondary);font-size:16px}
+.resume-actions{display:flex;gap:10px;flex-wrap:wrap}
+.resume-section{padding:32px 0;border-top:1px solid var(--border)}
+.resume-section h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;font-weight:500;color:var(--text-secondary);margin:0 0 28px}
+.resume-entry{margin-bottom:34px}
+.resume-entry:last-child{margin-bottom:0}
+.resume-entry-top{display:flex;justify-content:space-between;gap:24px;align-items:baseline}
+.resume-entry h3{font-size:20px;line-height:1.25;font-weight:500;margin:0}
+.resume-meta{font-size:14px;color:var(--text-secondary);margin:5px 0 12px}
+.resume-entry ul{margin:0;padding-left:20px;color:var(--text-secondary);line-height:1.65}
+.resume-entry li{margin:5px 0}
+.resume-copy{color:var(--text-secondary);line-height:1.7;margin:0;max-width:760px}
+.resume-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.resume-skill strong{display:block;font-weight:500;margin-bottom:7px}
+.resume-skill span{color:var(--text-secondary);line-height:1.6}
+.resume-contact{color:var(--text-secondary);line-height:1.8}
+.resume-contact a{color:var(--text-primary)}
+@media(max-width:700px){.resume-page{padding-top:48px}.resume-head{display:block;margin-bottom:44px}.resume-actions{margin-top:24px}.resume-entry-top{display:block}.resume-skills{grid-template-columns:1fr}}
+@media print{.site-header,.site-footer,.frame-line,.resume-actions{display:none!important}.resume-page{padding:0;max-width:none}.resume-section{break-inside:avoid}body{background:#fff!important;color:#111!important}.resume-page *{color:#111!important}.resume-section{border-color:#ddd}}
+</style>
+</head>
+<body data-page="resume">
+<div class="frame-line left"></div><div class="frame-line right"></div>
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Arnav Kala, home">AK</a>
+  <nav class="main-nav">
+    <a href="index.html">About</a><a href="blog.html">Blog</a><a href="videos.html">Videos</a><a href="tools.html">Tools</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="header-actions"><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☼</button></div>
+</header>
+<main class="resume-page">
+  <div class="resume-head">
+    <div><h1>Arnav Kala</h1><p class="resume-role">UI/UX Designer · Interaction Designer · Visual Designer</p></div>
+    <div class="resume-actions"><button class="btn btn-secondary" onclick="window.print()">Print / Save PDF</button><a class="btn btn-primary" href="index.html">Back to portfolio</a></div>
+  </div>
+
+  <section class="resume-section"><h2>Profile</h2><p class="resume-copy">Interaction and visual designer focused on turning complex ideas, emerging technologies, and product concepts into clear, engaging experiences. Combines UX research, interaction design, AI exploration, rapid prototyping, visual communication, and professional media production. Strongest at taking ambiguous problems from research and concept development through tested, visually polished prototypes.</p></section>
+
+  <section class="resume-section"><h2>Experience</h2>
+    <article class="resume-entry"><div class="resume-entry-top"><h3>Senior Editor · NAGO MEDIA</h3><span class="resume-meta">Oct 2025 – Present · Remote</span></div><ul><li>Edit, manage, and ship long-form and short-form video content for international clients, with 30+ projects delivered.</li><li>Contributed to content generating 50M+ social media views across client projects.</li><li>Manage projects from brief to delivery, coordinate with clients and editors, and maintain deadlines for high-value accounts.</li><li>Lead a team of editors while building long-term client and industry relationships.</li><li>Tools: Premiere Pro, After Effects, DaVinci Resolve, Photoshop, Figma.</li></ul></article>
+    <article class="resume-entry"><div class="resume-entry-top"><h3>Freelance Video Editor</h3><span class="resume-meta">2021 – Present · Remote</span></div><ul><li>Produced and edited video content for clients and social platforms, building a cumulative 100M+ views across published work.</li><li>Worked across editing, motion, visual development, client communication, and content delivery.</li><li>Developed a professional workflow for handling briefs, revisions, deadlines, and client relationships.</li></ul></article>
+    <article class="resume-entry"><div class="resume-entry-top"><h3>Founder · FinalProjkt</h3><span class="resume-meta">Video Editing Agency</span></div><ul><li>Founded and developed a video editing agency focused on delivering professional post-production for clients.</li></ul></article>
+  </section>
+
+  <section class="resume-section"><h2>Selected Projects</h2>
+    <article class="resume-entry"><h3>MAINA · Wearable Multimodal Communication Assistant</h3><p class="resume-meta">2026</p><p class="resume-copy">Designed a wearable communication system for deaf and hearing users using sign-language recognition, speech-to-text, and translated audio. Conducted research, stakeholder analysis, ideation, storyboarding, prototyping, and expert testing. Tested with 4 experts and achieved 72/100 SUS, Grade B.</p></article>
+    <article class="resume-entry"><h3>Scan Cart · Mobile Self-Checkout Experience</h3><p class="resume-meta">2026</p><p class="resume-copy">Designed and evaluated a mobile grocery self-checkout experience covering product scanning, cart management, nutrition tracking, and payment. Used 5 evaluation methods across 9 participants and 3 tasks, achieving 76.94/100 SUS, Grade B, with task completion rates of 100%, 89%, and 78%.</p></article>
+    <article class="resume-entry"><h3>Rabbit R1 Reimagined · Focused Productivity Ecosystem</h3><p class="resume-meta">2026</p><p class="resume-copy">Repurposed the Rabbit R1 as a focused Pomodoro productivity device. Redesigned the interaction model around 3 core actions and extended it into a connected R1, phone, and desktop ecosystem for focus sessions, streaks, history, tasks, and notes.</p></article>
+    <article class="resume-entry"><h3>Memories · Spatial Memory Experience</h3><p class="resume-meta">2026</p><p class="resume-copy">Explored how everyday photos could become immersive spatial memories without changing the user's capture workflow. Investigated spatial-computing tools, on-device Gaussian Splatting, privacy, offline processing, and gallery integration to develop a familiar interaction model.</p></article>
+  </section>
+
+  <section class="resume-section"><h2>Education</h2><article class="resume-entry"><h3>UPES · Bachelor of Design (B.Des), User Experience &amp; Interaction Design</h3><p class="resume-meta">2024 – 2028 · CGPA: 8.8/10</p><p class="resume-copy">Animation and Storytelling Design Workshop, UPES, 2024.</p></article></section>
+
+  <section class="resume-section"><h2>Skills</h2><div class="resume-skills"><div class="resume-skill"><strong>Design</strong><span>Figma, FigJam, Photoshop, Illustrator, ProtoPie, Framer, Webflow, Blender</span></div><div class="resume-skill"><strong>Development</strong><span>HTML, CSS, JavaScript, TypeScript, React, Git/GitHub</span></div><div class="resume-skill"><strong>Creative</strong><span>Premiere Pro, After Effects, DaVinci Resolve, Branding, Motion Design, Art Direction</span></div><div class="resume-skill"><strong>Emerging Tech</strong><span>ComfyUI, Ollama, LM Studio, Claude Code, Antigravity, AI-powered interaction, Arduino/electronics</span></div></div></section>
+
+  <section class="resume-section"><h2>Achievements &amp; Certifications</h2><div class="resume-entry"><p class="resume-copy">BHU Design e-Rush, Team BluntObjects, ranked 11th, 2026.<br>Design Fusion S2, ranked 12th of 110 teams, 2025.<br><br>Google UX Design, Coursera, 2025.<br>Foundations of User Experience (UX) Design, Google · Coursera, Jan 2025.<br>Build Wireframes and Low-Fidelity Prototypes, Google · Coursera, Feb 2025.</p></div></section>
+
+  <section class="resume-section"><h2>Contact</h2><div class="resume-contact">Dehradun, Uttarakhand · +91 62050 65780<br><a href="mailto:biz.arnavify@gmail.com">biz.arnavify@gmail.com</a> · <a href="https://arnavify.com">arnavify.com</a><br><a href="https://linkedin.com/in/arnavify">LinkedIn</a> · <a href="https://instagram.com/arnavify">Instagram</a><br><br>Languages: English · Hindi · French</div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
