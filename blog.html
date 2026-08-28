@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog | Arnav Kala</title>
+<meta name="description" content="Notes on design, process, and tools.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // set theme before paint to avoid flash
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+</script>
+</head>
+<body data-page="blog">
+<div class="frame-line left"></div>
+<div class="frame-line right"></div>
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Arnav Kala — home">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </a>
+  <nav class="main-nav" id="main-nav">
+    <a href="index.html" data-nav="about">About</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <a href="videos.html" data-nav="videos">Videos</a>
+    <a href="tools.html" data-nav="tools">Tools</a>
+    <a href="contact.html" data-nav="contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h1 class="page-title">Blog</h1>
+    <p class="lede">Notes on design, process, and the tools I use to build things.</p>
+
+    <div class="post-list">
+      <a class="post-row" href="#" data-placeholder="post-1">
+        <div class="post-date">[Month Year]</div>
+        <div class="post-title">[Placeholder post title]</div>
+        <p class="post-excerpt">Add a one- or two-sentence summary of the post here once it's written.</p>
+      </a>
+      <a class="post-row" href="#" data-placeholder="post-2">
+        <div class="post-date">[Month Year]</div>
+        <div class="post-title">[Placeholder post title]</div>
+        <p class="post-excerpt">Add a one- or two-sentence summary of the post here once it's written.</p>
+      </a>
+      <a class="post-row" href="#" data-placeholder="post-3">
+        <div class="post-date">[Month Year]</div>
+        <div class="post-title">[Placeholder post title]</div>
+        <p class="post-excerpt">Add a one- or two-sentence summary of the post here once it's written.</p>
+      </a>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="brand" aria-hidden="true">
+    <svg viewBox="0 0 40 40" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
+    </svg>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="index.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="tools.html">Tools</a>
+    </div>
+    <div class="footer-col">
+      <h4>Social</h4>
+      <a href="#" data-placeholder="linkedin">LinkedIn</a>
+      <a href="#" data-placeholder="x">X</a>
+      <a href="#" data-placeholder="instagram">Instagram</a>
+      <a href="#" data-placeholder="dribbble">Dribbble</a>
+    </div>
+    <div class="footer-col">
+      <h4>Work</h4>
+      <a href="contact.html">Contact me</a>
+      <a href="#" data-placeholder="resume">Resumé</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.main-nav a[data-nav]').forEach(function (a) {
+    if (a.getAttribute('data-nav') === document.body.getAttribute('data-page')) {
+      a.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
