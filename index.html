@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script>
-  // set theme before paint to avoid flash
   document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
 </script>
 </head>
@@ -43,16 +42,13 @@
 <main>
   <div class="container">
     <h1 class="page-title">Designing digital experiences that feel effortless</h1>
-
     <p class="lede">I design interfaces, visual systems, and interactive products — combining UX thinking with emerging technology to make complex ideas easy to use.</p>
     <p class="lede"><!-- Replace with your own story --> Add a second paragraph here about how you got into design, what you've worked on, and what you're focused on now.</p>
-
     <div class="actions">
       <a class="btn btn-primary" href="contact.html">Get in touch</a>
-      <a class="btn btn-secondary" href="#" data-placeholder="resume">View resumé</a>
+      <a class="btn btn-secondary" href="resume.html">View resume</a>
     </div>
 
-    <!-- Photo collage — replace each .ph placeholder with an <img> once you upload your photos -->
     <div class="collage">
       <div class="frame f1 tape"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
       <div class="frame f2"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
@@ -64,72 +60,28 @@
       <div class="frame f8"><div class="ph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l4.5-6 3.5 4.2L15 11l5 6H4z" fill="currentColor"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg></div><div class="cap">Photo</div></div>
     </div>
 
-    <!-- Timeline — years and copy are placeholders, edit with your real milestones -->
     <div class="timeline">
-      <div class="t-row">
-        <div class="t-year">[Year]</div>
-        <div class="t-dot-col"><div class="t-dot"></div></div>
-        <div class="t-body"><strong>Started designing.</strong> Describe how you first got into design — a tool, a project, a spark.</div>
-      </div>
-      <div class="t-row">
-        <div class="t-year">[Year]</div>
-        <div class="t-dot-col"><div class="t-dot"></div></div>
-        <div class="t-body"><strong>Studied design.</strong> Add your education — school, program, and anything notable you built there.</div>
-      </div>
-      <div class="t-row">
-        <div class="t-year">[Year]</div>
-        <div class="t-dot-col"><div class="t-dot"></div></div>
-        <div class="t-body"><strong>First design role.</strong> Shipped work like MAINA, Scan Cart, Rabbit R1 Reimagined, and Memories — add real context here.</div>
-      </div>
-      <div class="t-row">
-        <div class="t-year">[Year]</div>
-        <div class="t-dot-col"><div class="t-dot"></div></div>
-        <div class="t-body"><strong>Expanded into video and motion.</strong> Add details about your YouTube thumbnail and motion design work.</div>
-      </div>
-      <div class="t-row now">
-        <div class="t-year">Now</div>
-        <div class="t-dot-col"><div class="t-dot"></div></div>
-        <div class="t-body"><strong>Designing interfaces and interactive products.</strong> Say what you're focused on today.</div>
-      </div>
+      <div class="t-row"><div class="t-year">[Year]</div><div class="t-dot-col"><div class="t-dot"></div></div><div class="t-body"><strong>Started designing.</strong> Describe how you first got into design — a tool, a project, a spark.</div></div>
+      <div class="t-row"><div class="t-year">[Year]</div><div class="t-dot-col"><div class="t-dot"></div></div><div class="t-body"><strong>Studied design.</strong> Add your education — school, program, and anything notable you built there.</div></div>
+      <div class="t-row"><div class="t-year">[Year]</div><div class="t-dot-col"><div class="t-dot"></div></div><div class="t-body"><strong>First design role.</strong> Shipped work like MAINA, Scan Cart, Rabbit R1 Reimagined, and Memories — add real context here.</div></div>
+      <div class="t-row"><div class="t-year">[Year]</div><div class="t-dot-col"><div class="t-dot"></div></div><div class="t-body"><strong>Expanded into video and motion.</strong> Add details about your YouTube thumbnail and motion design work.</div></div>
+      <div class="t-row now"><div class="t-year">Now</div><div class="t-dot-col"><div class="t-dot"></div></div><div class="t-body"><strong>Designing interfaces and interactive products.</strong> Say what you're focused on today.</div></div>
     </div>
   </div>
 </main>
 <footer class="site-footer">
-  <div class="brand" aria-hidden="true">
-    <svg viewBox="0 0 40 40" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/>
-    </svg>
-  </div>
+  <div class="brand" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 30 L20 8 L34 30 M13 30 L20 19 L27 30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-primary)"/></svg></div>
   <div class="footer-cols">
-    <div class="footer-col">
-      <h4>Site</h4>
-      <a href="index.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="tools.html">Tools</a>
-    </div>
-    <div class="footer-col">
-      <h4>Social</h4>
-      <a href="#" data-placeholder="linkedin">LinkedIn</a>
-      <a href="#" data-placeholder="x">X</a>
-      <a href="#" data-placeholder="instagram">Instagram</a>
-      <a href="#" data-placeholder="dribbble">Dribbble</a>
-    </div>
-    <div class="footer-col">
-      <h4>Work</h4>
-      <a href="contact.html">Contact me</a>
-      <a href="#" data-placeholder="resume">Resumé</a>
-    </div>
+    <div class="footer-col"><h4>Site</h4><a href="index.html">About</a><a href="blog.html">Blog</a><a href="videos.html">Videos</a><a href="tools.html">Tools</a></div>
+    <div class="footer-col"><h4>Social</h4><a href="https://linkedin.com/in/arnavify">LinkedIn</a><a href="#" data-placeholder="x">X</a><a href="https://instagram.com/arnavify">Instagram</a><a href="#" data-placeholder="dribbble">Dribbble</a></div>
+    <div class="footer-col"><h4>Work</h4><a href="contact.html">Contact me</a><a href="resume.html">Resume</a></div>
   </div>
 </footer>
 <script src="script.js"></script>
 <script>
   document.querySelectorAll('.main-nav a[data-nav]').forEach(function (a) {
-    if (a.getAttribute('data-nav') === document.body.getAttribute('data-page')) {
-      a.classList.add('active');
-    }
+    if (a.getAttribute('data-nav') === document.body.getAttribute('data-page')) a.classList.add('active');
   });
 </script>
-
 </body>
 </html>
